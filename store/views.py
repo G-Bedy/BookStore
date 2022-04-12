@@ -1,15 +1,11 @@
-from django.shortcuts import render
-
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
+
 from .models import *
 
-def categories(request):
-    return {
-        'categories': Category.objects.all()
-    }
 
 def all_products(request):
-    products = Product.objects.all()
+    products = Product.product.all()
     return render(request, 'store/home.html', {'products': products})
 
 
