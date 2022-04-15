@@ -14,5 +14,5 @@ urlpatterns = [
 
 
 #  from django.contrib.sessions.models import Session
-# s = Session.objects.get(pk='knq0mxb6aavb3blzkfum1hebsb1oxxmx')
+# s = Session.objects.get(pk='nhpqml3usy7tgt9pm59642a8a00urbi9')
 # s.get_decoded()
