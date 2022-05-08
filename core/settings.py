@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-@!b!_-fxtlnqtt2z$*%iw5@6#t=1gpcuoqyy-l@2rw$3$u9z6w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localehost']
 
 
 # Application definition
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'basket',          #.apps.BasketConfig',
     'account',
     'payment',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +148,6 @@ LOGIN_URL = '/account/login/'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+# STRIPE_ENDPOINT_SECRET = ''
