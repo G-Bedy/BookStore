@@ -1,5 +1,4 @@
 from django.conf import settings
-from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
 
@@ -40,7 +39,7 @@ class Product(models.Model):
 
     class Meta:
         verbose_name_plural = 'Products'
-        ordering = ('-created', )
+        ordering = ('-created',)
 
     def get_absolute_url(self):
         return reverse('store:product_detail', args=[self.slug])
