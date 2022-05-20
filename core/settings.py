@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'basket',
     'account',
     'orders',
+    'mptt',
 ]
 
 MIDDLEWARE = [
